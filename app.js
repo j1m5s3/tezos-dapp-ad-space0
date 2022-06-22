@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   //res.sendFile(__dirname + "/frontend/index0.html");
   let fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
   console.log('Server @: ', fullUrl);
-  res.sendFile(__dirname + "/frontend/index_panel_test.html");
+  res.sendFile(__dirname + "/frontend/index.html");
 });
 
 const PORT = process.env.PORT || 8000;
